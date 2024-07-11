@@ -1,7 +1,5 @@
 # Frontend for Backend server
 
-Welcome to the Vite + React Starter Template! This template provides a quick and easy way to start building modern web applications using Vite, React, and Shadcn UI, with basic Darkmode functionality already installed.
-
 ## Features
 
 - **Vite:** The next-generation frontend tooling. It's fast, lightweight, and comes with great features out of the box.
