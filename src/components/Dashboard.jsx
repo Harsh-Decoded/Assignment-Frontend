@@ -1,5 +1,3 @@
-"use client"
-
 import { useState, useMemo, useEffect } from "react"
 import { useSelector, useDispatch } from "react-redux"
 import { Input } from "@/components/ui/input"
