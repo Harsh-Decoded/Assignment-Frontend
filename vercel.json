@@ -1,8 +1,10 @@
 {
-    "rewrites": [
-        {
-            "src": "/(.*)",
-            "dest": "/"
-        }
+    "version": 2,
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/index.html"
+      }
     ]
-}
+  }
+  
