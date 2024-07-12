@@ -9,7 +9,7 @@ export const useAxios = async ({ method, url, data }) => {
     };
 
     //Default Setting for PMT server and header
-    axios.defaults.baseURL = 'http://localhost:3000';
+    axios.defaults.baseURL = 'https://assignment-backend-rust.vercel.app/';
     try {
         return await axios({
             method: method,
