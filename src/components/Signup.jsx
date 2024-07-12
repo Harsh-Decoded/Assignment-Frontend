@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button"
+import { Button, buttonVariants } from "@/components/ui/button"
 import {
   Card,
   CardContent,
@@ -23,6 +23,7 @@ import { Loader2 } from "lucide-react"
 import { toast } from "react-toastify"
 import { useState } from "react"
 import { useAxios } from "@/Middleware"
+import { Link } from "react-router-dom"
 
 const formSchema = z.object({
   userName : z.string()
@@ -117,6 +118,9 @@ export default function SignUpForm() {
                 { isLoading && <Loader2 className="mr-2 h-4 w-4 animate-spin" /> }
                 Create an account
               </Button>
+              <Link to="/" className={`${buttonVariants({ variant: "outline" })} block bg-green-500 text-white w-full mt-2`}>
+                View users
+              </Link>
             </CardContent>
           </Card>
         </form>

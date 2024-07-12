@@ -5,6 +5,8 @@ import { Table, TableHeader, TableRow, TableHead, TableBody, TableCell } from "@
 import { setUsers } from "@/store/usersSlice"
 import { useAxios } from "@/Middleware"
 import { toast } from "react-toastify"
+import { Link } from "react-router-dom/dist"
+import { buttonVariants } from "./ui/button"
 
 export default function Dashboard() {
     const [search, setSearch] = useState("")
@@ -31,7 +33,7 @@ export default function Dashboard() {
     return (
         <main className="flex flex-col mt-20 mx-10 border p-4">
             <div className="space-y-4">
-                <div className="flex items-center gap-2">
+                <div className="flex items-center justify-between gap-2">
                     <Input
                         type="search"
                         placeholder="Search by username..."
@@ -39,6 +41,7 @@ export default function Dashboard() {
                         onChange={(e) => setSearch(e.target.value)}
                         className="w-full max-w-md"
                     />
+                    <Link className={buttonVariants({ variant: "default" })} to="/signup"> Add User </Link>
                 </div>
                 <div className="overflow-auto border rounded-lg">
                     <Table>
